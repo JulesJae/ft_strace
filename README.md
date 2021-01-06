@@ -1,5 +1,5 @@
 # ft_strace  
-Recoding a simplified strace command. Trace all the syscall realized by the specified program.  
+Recoding a simplified strace command. Trace all the syscalls realized by the specified program.  
 Objectives:
 * Ptrace
 * Interruptions
