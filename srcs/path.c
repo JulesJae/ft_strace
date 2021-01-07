@@ -16,10 +16,9 @@ static int	try_env_path(char *cmd, struct s_path *path)
 	char			*env_path;
 	char			*next;
 
-	if (i == ENV_END)
+	if (i == ENV_END || (env_path = getenv("PATH")) == NULL)
 		return (0);
 	memset(path->buf, '\0', MAX_PATH);
-	env_path = getenv("PATH");
 	env_path += i;
 	if ((next = strchr(env_path, ':')))
 	{
